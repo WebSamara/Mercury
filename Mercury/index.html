@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/devicecheck.js"></script>
+    <link rel="stylesheet" id="stylesheet" href="./style/style.css">
+    <title>Login</title>
+</head>
+
+<body onload="deviceCheck()">
+    <div class="logo">
+        <a href="https://mercdev.com/" target="_blank"><img src="./images/Logo.svg" alt="Mercury"></a>
+    </div>
+    <div class="loginForm">
+        <div class="loginSuccessful avatarBlock"><img class="avatar" id="avatar" src="" alt="Your avatar"></div>
+        <input type="text" class="name loginSuccessful" id="name" value="Helena Joseph" disabled>
+        <h1 class = 'loginOnSite'>Log In</h1>
+        <div class="form loginOnSite">
+            <form method="POST" id="login">
+                <input type="email" name="email" class="input" id="email" autocomplete="on" placeholder="E-Mail" ><br>
+                <input type="password" name="password" class="input" id="password" placeholder="Password" >
+            </form>
+            <div type = "class" class="message_error" id="message_error">
+                <input type="text" name ="error" id="error" disabled>
+            </div>
+        </div>
+        <input type="button" class="button" id="button" value="Login" onclick="submit()">
+    </div>
+    <script src="./src/js.js"></script>
+</body>
+
+
+</html>
