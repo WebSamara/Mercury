@@ -16,13 +16,14 @@
     src: url("../fonts/Gotham/GothamPro.woff") format("woff");
     src: url("../fonts/Gotham/GothamPro.ttf") format("truetype");
 }
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: Gotham;
     background: url("../images/background.png") no-repeat center;
     background-size: cover;
-    min-height: 1080px;
-    overflow:  hidden;  
 }
 
 .logo {
@@ -141,20 +142,129 @@ h1 {
    background-color: white; 
 }
 
-@media screen and (min-height: 600px) and (max-height: 1024px) and (min-width: 799px) and (max-width: 1440px) {
-    body {
-        min-height: 1024px;
-        min-width: 800px;
-        overflow:  hidden;
-    }
+/*@media screen and (max-height: 850px) and (max-width: 728px) {
     .logo {
-        width: max-content;
+        width: 58%;
+        height: 7%;
         margin: 7% auto 0;
     }
     .loginForm {
-        margin: 6% auto 0;
-        padding-top: 48px;     
+        margin: 12% auto 0;
+        padding-top: 48px;
+        width: 90%;
+        height: 40%;
     }
-    
+    .input {
+        width: 90%;
+    }
+    .message_error {
+        margin: 32px auto 0;
+        width: 95%;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-height: 600px) and (max-width: 728px){
+    body {
+        padding-top: 10%;
+    }
+    .loginForm {
+        margin: 0 auto;
+        padding-top: 48px;
+        width: 90%;
+        height: 40%;
+    }
+    .input {
+        width: 90%;
+    }
+    .logo {
+        display: none;
+    }
+    .message_error {
+        margin: 32px auto 0;
+        width: 95%;
+    }
 }
 
+@media screen and (max-width: 850px) and (max-height: 930px){
+    .logo {
+        margin-top: 7%;
+    }
+    .loginForm {
+        margin: 5% auto;
+
+    }
+}*/
+@media screen and (max-width: 900px){
+    .logo {
+        width: 36%;
+        height: 7%;
+        margin: 7% auto 0;
+    }
+    .loginForm {
+        margin: 12% auto 0;
+        padding-top: 48px;
+        width: 66%;
+        height: 40%;
+    }
+    .input {
+        width: 90%;
+    }
+    .message_error {
+        margin: 32px auto 0;
+        width: 95%;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 650px){
+    .loginForm {
+        width: 90%;
+    }
+}
+@media screen and (max-height: 860px) {
+    .logo {
+        margin-top: 7%;
+    }
+}
+
+
+@media screen and (max-height: 750px){
+    .loginForm {
+        margin-top: 4%;
+    }
+}
+@media screen and (max-height: 690px){
+    .logo {
+        margin-top: 3%;
+    }
+}
+@media screen and (max-height: 630px){
+    .logo {
+        display: none;
+    }
+    .loginForm {
+        margin-top: 8%;
+    }
+}
+@media screen and (max-height: 600px){
+    .loginForm {
+        margin-top: 6%;
+    }
+}
+@media screen and (max-height: 570px){
+    .loginForm {
+        margin-top: 4%;
+    }
+}
+@media screen and (max-height: 540px){
+    .loginForm {
+        margin-top: 2%;
+    }
+}

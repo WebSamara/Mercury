@@ -46,7 +46,7 @@ function login(email, password){
                 loginOnSite[i].style.display = ('none');
             }
             for (let i=0; i < loginSuccessful.length; i++) {
-                loginSuccessful[i].style.display = ('inline');
+                loginSuccessful[i].style.display = ('block');
             }          
             avatar.src = jsonResponse["photoUrl"];
             avatar.style.width = '128px'; avatar.style.height = '128px'; avatar.style.borderRadius ='100px';
